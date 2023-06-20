@@ -53,10 +53,10 @@
 	}
 }
 body{
-	width: 100%;
+	width: 95%;
 	margin: auto;
 	overflow-x: hidden;
-	font-family: times new roman;
+	font-family: sans-serif;
 	background: ghostwhite;
 	background-position: center center;
 	background-size: cover;
@@ -71,7 +71,8 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	border: 2px groove black;
-/*	position: fixed;*/
+	position: relative;
+
 }
 .topnav-txt-em{
 	display: flex;
@@ -92,12 +93,12 @@ body{
 	background: rgba(0, 0, 0, 0.8);
 	color: white;
 	flex-wrap: wrap;
-	width: 100%;
+	width: 95%;
 	justify-content: space-between;
 	border: 2px groove black;
-	position: sticky;
-	top: -100px;
-	z-index: 5;
+	position: fixed;
+/*	top: -100px;*/
+z-index: 5;
 
 }
 .nav-2:hover{
@@ -140,7 +141,7 @@ body{
 	color: white;
 	margin-top: 80px;
 	position: relative;
-	z-index: 3;
+/*	z-index: 3;*/
 }
 .hero-description{
 	width: 450px;
@@ -225,7 +226,6 @@ body{
 	align-items: center;
 	width: 800px;
 	margin: auto;
-
 	
 }
 .whati-do-desc > div:nth-child(1){
@@ -449,8 +449,8 @@ transition: all 1s;
 	color: white;
 }
 .sub-1-abt-desc > div > span > img{
-	width: 50px;
-	height: 50px;
+	width: 70px;
+	height: 70px;
 	border-radius: 100%;
 	margin-right: 20px;
 	margin-top: 20px;
@@ -493,34 +493,29 @@ transition: all 1s;
 	margin-right: 220px;
 }
 .progress-bar-1{
-	border: 2px solid black;
 	height: 8px;
-	width: 70%;
+	width: 100%;
 	background-color: white;
 	border-radius: 5px;
-
 }
 .abt-desc-prog-bar > div > .progress-bar-inner-1{
-	border: 2px solid white;
-	height: 5px;
+	height: 8px;
 	width: 85%;
-	background-color: black;
+	background-color: blue;
 	border-radius: 5px;
 }
 
 .progress-bar-2{
-	border: 2px solid black;
 	height: 8px;
-	width: 70%;
+	width: 100%;
 	background-color: white;
 	border-radius: 5px;
 
 }
 .abt-desc-prog-bar > div > .progress-bar-inner{
-	border: 2px solid white;
-	height: 5px;
+	height: 8px;
 	width: 85%;
-	background-color: black;
+	background-color: blue;
 	border-radius: 5px;
 }
 .lower-bar{
@@ -597,7 +592,7 @@ transition: all 1s;
 	background-color: rgba(0, 0, 0, 0.8);
 	color: white;
 }
-.footer-end > span{
+.footer-end > div{
 	position: relative;
 	top: 20%;
 	left: 50%;
@@ -895,9 +890,7 @@ transition: all 1s;
 		justify-content: center;
 		align-items: center;
 	}
-	.about-sec{
-
-	}
+	
 	.about-desc{
 		width: 85%;
 	}
@@ -905,40 +898,40 @@ transition: all 1s;
 		width: 60%;
 	}
 	.progress-bar-1{
-	border: 2px solid black;
-	height: 8px;
-	width: 100%;
-	background-color: white;
-	border-radius: 5px;
-}
-.abt-desc-prog-bar > div > .progress-bar-inner-1{
-	border: none;
-	height: 8px;
-	width: 94%;
-	background-color: red;
-	border-radius: 5px;
-}
+		border: 2px solid black;
+		height: 8px;
+		width: 100%;
+		background-color: white;
+		border-radius: 5px;
+	}
+	.abt-desc-prog-bar > div > .progress-bar-inner-1{
+		border: none;
+		height: 8px;
+		width: 94%;
+		background-color: red;
+		border-radius: 5px;
+	}
 
-.progress-bar-2{
-	border: 2px solid black;
-	height: 8px;
-	width: 100%;
-	background-color: white;
-	border-radius: 5px;
-}
-.abt-desc-prog-bar > div > .progress-bar-inner{
-	border: none;
-	height: 8px;
-	width: 94%;
-	background-color: red;
-	border-radius: 5px;
-}
-.top-bar-1{
-	margin-right: 120px;
-}
-.lower-bar-1{
-	margin-right: 120px;
-}
+	.progress-bar-2{
+		border: 2px solid black;
+		height: 8px;
+		width: 100%;
+		background-color: white;
+		border-radius: 5px;
+	}
+	.abt-desc-prog-bar > div > .progress-bar-inner{
+		border: none;
+		height: 8px;
+		width: 94%;
+		background-color: red;
+		border-radius: 5px;
+	}
+	.top-bar-1{
+		margin-right: 120px;
+	}
+	.lower-bar-1{
+		margin-right: 120px;
+	}
 	.contact-us{
 		width: 70%;
 		position: relative;
@@ -947,7 +940,50 @@ transition: all 1s;
 	}
 
 }
-@media screen and (max-width:420px) {
+@media screen and (max-width:468px) {
+
+	.nav-2{
+		width: 99%;
+
+	}
+	.nav-2 > div > a:first-child{
+		padding-bottom: 5px;
+		border-bottom: 2px solid green;
+	}
+	.hero-section{
+		height: 700px;
+	}
+	.hero-description{
+		width: 350px;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+
+	}	
+	.nav-2 > div > a:hover{
+		padding-bottom: 5px;
+
+	}
+	.what-i-do{
+		background-color: dimgray;
+		background-image: url('./istock-bg/9.jpg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		color: white;
+		height: 700px;
+	}
+	.whati-do-desc{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 800px;
+		margin: auto;
+		position: relative;
+		top: 15%;
+		left: 10%;
+
+	}
 	.topnav-txt-em{
 		display: block;
 	}
@@ -963,8 +999,109 @@ transition: all 1s;
 		/*margin: auto;
 		margin-bottom: 5%;*/
 	}
+
+	.portfolios-3{
+		transform: rotate(0deg);
+		display: flex;
+		margin-bottom: 15px;
+		position: relative;
+		left: -2%;
+		height: 40%;
+	}
+	.portfolios-4{
+		transform: rotate(0deg);
+		display: flex;
+		margin-bottom: 15px;
+		position: relative;
+		left: -2%;
+		height: 40%;
+	}
+	.about-desc{
+		display: block;
+		align-items: center;
+		background-color: black;
+		font-family: times new roman;
+		width: 80%;
+		margin: auto;
+	}
+	.sub-1-abt-desc{
+		display: block;
+		justify-content: center;
+		align-items: top;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.9);
+		text-align: center;
+	}
+	.lower-bar-1{
+	0margin-right: 70%;
+	}
 	.whati-do-desc > div:nth-child(1){
 		margin-bottom: 10px;
+	}
+	.contact-us{
+		width: 70%;
+		position: relative;
+		left: 15%;
+		height: 600px;
+	}
+	
+	.contact-div > div > h3 > hr{
+		width: 70%;
+	}
+	.contact-desc{
+		display: block;
+		justify-content: center;
+		align-items: top;
+		margin-top:30px;
+		margin: 50px;
+		font-family: times new roman;
+	}
+
+	.footer-end > div{
+		text-align: center;
+		left: 0%;
+	}
+}
+
+@media screen and (max-width:368px) {
+	body{
+		font-size: 12px;
+		margin: auto;
+	}
+
+	.hero-description{
+	width: 300px;
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	}
+
+	.portfolios-1 > div > p{
+		width: 120px;
+	}
+	.portfolios-2 > div > p{
+		width: 120px;
+	}
+	.portfolios-3 > div > p{
+		width: 120px;
+	}
+	.portfolios-4 > div > p{
+		width: 120px;
+	}
+	.portfolios-1{
+		position: relative;
+		left: 35%;
+		height: 40%;
+	}
+	.portfolios-2{
+		position: relative;
+		left: 35%;
+		height: 40%;
+	}
+
+	.sub-1-abt-desc{
+		width: 105%;
+		margin: auto;
 	}
 
 }
