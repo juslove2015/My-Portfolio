@@ -80,6 +80,18 @@ body{
 	margin: 10px 10px;
 	font-weight: bolder;
 }
+
+.topnav-icons > a{
+	margin-right: 10px;
+	color: gray;
+}
+
+.topnav-icons > a:hover{
+	font-size: 20px;
+	color: green;
+	transition: .7s;
+}
+
 .topnav-txt-em > div:nth-child(1){
 	margin-right: 15px;
 }
@@ -617,9 +629,38 @@ transition: all 1s;
 	text-align: right;
 }
 
+.footer-div > div > div:nth-child(1){
+	color: gray;
+	margin-bottom: 10px;
+	animation-name: bubbles;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.footer-div > div > div:nth-child(2){
+	color: gray;
+	margin-bottom: 10px;
+	animation-name: bubbles;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+.footer-div > div > div:nth-child(3){
+	color: gray;
+	margin-bottom: 10px;
+	animation-name: bubbles;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+.footer-div > div > div:nth-child(4){
+	color: gray;
+	margin-bottom: 10px;
+	animation-name: bubbles;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
 
+.footer-div > div > div:hover{
 
-
+}
 
 
 
@@ -737,13 +778,13 @@ transition: all 1s;
 	}
 }
 @media all and (max-width:768px) {
-	/*html, body{
+	html, body{
 		width: 150%;
 		height: 150%;
 		margin: 0;
 		padding: 0;
 		overflow-x: hidden;
-	}*/
+	}
 
 	body{
 		width: 150%;
@@ -956,9 +997,7 @@ transition: all 1s;
 		padding: 0;
 		overflow-x: hidden;
 	}
-	.topnav-icons{
-		display: none;
-	}
+	
 	.topnav-txt-em{
 		display: flex;
 		font-size: 12px;
