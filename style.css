@@ -973,20 +973,19 @@ transition: all 1s;
 	}
 
 	.nav-2 > div{
-		display: grid;
-		position: absolute;
-		top: 70px;
-		left:0;
-		background: rgba(0, 0, 0, 0.8);
-		width: `100%;
-		transform: translateY(-100%);
-		z-index: -1;
-		transition: .6s;
+		font-size: 11px;
 	}
 
 	.nav-2 > div > a{
-		padding-left: 35px;
+		padding-left: 0;
 		padding-bottom: 20px;
+	}
+	.nav-2 > div > a:hover{
+		background-color: green;
+		font-size: 12px;
+		transform: .6s;
+		margin: 2px 10px;
+		border-radius: 10%;
 	}
 
 	.nav-2Toggle{
